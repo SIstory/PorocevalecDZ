@@ -1,12 +1,2 @@
 ~*.*
-*.pdf
-*.epub
-*.bak
-*.jpg
-*.jpeg
 *.png
-*.zip
-
-archive/
-sources/
-working/
