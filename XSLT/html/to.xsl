@@ -56,7 +56,7 @@
    <xsl:param name="chapterAsSIstoryPublications">false</xsl:param>
    
    <!--<xsl:param name="path-general">../../../</xsl:param>-->
-   <!--<xsl:param name="path-general">http://www2.sistory.si/publikacije/</xsl:param>-->
+   <!--<xsl:param name="path-general">https://www2.sistory.si/publikacije/</xsl:param>-->
    <!-- v primeru localWebsite='true' spodnji paragraf nima vrednosti -->
    <xsl:param name="path-general"></xsl:param>
    
@@ -97,7 +97,7 @@
          </b>
          <!-- povezava na SIstory publikacijo -->
          <xsl:text> [</xsl:text>
-         <a href="{concat('http://sistory.si/11686/',$sistoryID)}" title="Zgodovina Slovenije - SIstory" target="_blank">SIstory</a>
+         <a href="{concat('https://sistory.si/11686/',$sistoryID)}" title="Zgodovina Slovenije - SIstory" target="_blank">SIstory</a>
          <xsl:text>]</xsl:text>
          <!-- Vsebina: -->
          <xsl:if test="tei:relatedItem">
@@ -168,7 +168,7 @@
                <a href="{concat('PDF/',$rightSistoryFile,'#page=',$pdfPage)}" title="PDF datoteka" target="_blank">PDF</a>
             </xsl:when>
             <xsl:otherwise>
-               <a href="{concat('http://www.sistory.si',$sistoryPath,$rightSistoryFile,'#page=',$pdfPage)}" title="Zgodovina Slovenije - SIstory" target="_blank">PDF</a>
+               <a href="{concat('https://www.sistory.si',$sistoryPath,$rightSistoryFile,'#page=',$pdfPage)}" title="Zgodovina Slovenije - SIstory" target="_blank">PDF</a>
             </xsl:otherwise>
          </xsl:choose>
          <xsl:text>]</xsl:text>
@@ -250,7 +250,7 @@
                <a href="{concat('PDF/',$sistoryFile,'#page=',tei:monogr/tei:imprint/tei:biblScope)}" title="Zgodovina Slovenije - SIstory" target="_blank">PDF</a>
             </xsl:when>
             <xsl:otherwise>
-               <a href="{concat('http://www.sistory.si',$sistoryPath,$sistoryFile,'#page=',tei:monogr/tei:imprint/tei:biblScope)}" title="Zgodovina Slovenije - SIstory" target="_blank">PDF</a>
+               <a href="{concat('https://www.sistory.si',$sistoryPath,$sistoryFile,'#page=',tei:monogr/tei:imprint/tei:biblScope)}" title="Zgodovina Slovenije - SIstory" target="_blank">PDF</a>
             </xsl:otherwise>
          </xsl:choose>
          <xsl:text>]</xsl:text>
@@ -359,7 +359,7 @@
       <script type="text/javascript" src="{if ($localWebsite='true') then 'datatables/vfs_fonts.js' else 'https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.32/vfs_fonts.js'}"></script>
       <script type="text/javascript" src="{if ($localWebsite='true') then 'datatables/buttons.html5.min.js' else 'https://cdn.datatables.net/buttons/1.4.2/js/buttons.html5.min.js'}"></script>
       <!-- določi, kje je naša dodatna DataTables js datoteka -->
-      <script type="text/javascript" src="{if ($localWebsite='true') then 'datatables/range-filter-external.js' else 'http://www2.sistory.si/publikacije/themes/js/plugin/DataTables/range-filter-external.js'}"></script>
+      <script type="text/javascript" src="{if ($localWebsite='true') then 'datatables/range-filter-external.js' else 'https://www2.sistory.si/publikacije/themes/js/plugin/DataTables/range-filter-external.js'}"></script>
       
       <link href="{if ($localWebsite='true') then 'datatables/responsive.dataTables.min.css' else 'https://cdn.datatables.net/responsive/2.1.1/css/responsive.dataTables.min.css'}" rel="stylesheet" type="text/css" />
       <link href="{if ($localWebsite='true') then 'datatables/buttons.dataTables.min.css' else 'https://cdn.datatables.net/buttons/1.4.1/css/buttons.dataTables.min.css'}" rel="stylesheet" type="text/css" />
@@ -512,7 +512,7 @@
                                  <a href="{concat('PDF/',$sistoryFile,'#page=',$pdfPage)}">PDF</a>
                               </xsl:when>
                               <xsl:otherwise>
-                                 <a href="{concat('http://www.sistory.si',$sistoryPath,$sistoryFile,'#page=',$pdfPage)}" title="Zgodovina Slovenije - SIstory" target="_blank">SIstory</a>
+                                 <a href="{concat('https://www.sistory.si',$sistoryPath,$sistoryFile,'#page=',$pdfPage)}" title="Zgodovina Slovenije - SIstory" target="_blank">SIstory</a>
                               </xsl:otherwise>
                            </xsl:choose>
                         </xsl:when>
@@ -522,7 +522,7 @@
                                  <a href="{concat('PDF/',tei:ref)}" title="PDF datoteka" target="_blank">PDF</a>
                               </xsl:when>
                               <xsl:otherwise>
-                                 <a href="{concat('http://sistory.si/11686/',$sistoryID)}" title="Zgodovina Slovenije - SIstory" target="_blank">SIstory</a>
+                                 <a href="{concat('https://sistory.si/11686/',$sistoryID)}" title="Zgodovina Slovenije - SIstory" target="_blank">SIstory</a>
                               </xsl:otherwise>
                            </xsl:choose>
                         </xsl:otherwise>
@@ -554,7 +554,7 @@
       <script type="text/javascript" src="{if ($localWebsite='true') then 'datatables/vfs_fonts.js' else 'https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.32/vfs_fonts.js'}"></script>
       <script type="text/javascript" src="{if ($localWebsite='true') then 'datatables/buttons.html5.min.js' else 'https://cdn.datatables.net/buttons/1.4.2/js/buttons.html5.min.js'}"></script>
       <!-- določi, kje je naša dodatna DataTables js datoteka -->
-      <script type="text/javascript" src="{if ($localWebsite='true') then 'datatables/range-filter-external.js' else 'http://www2.sistory.si/publikacije/themes/js/plugin/DataTables/range-filter-external.js'}"></script>
+      <script type="text/javascript" src="{if ($localWebsite='true') then 'datatables/range-filter-external.js' else 'https://www2.sistory.si/publikacije/themes/js/plugin/DataTables/range-filter-external.js'}"></script>
       
       <link href="{if ($localWebsite='true') then 'datatables/responsive.dataTables.min.css' else 'https://cdn.datatables.net/responsive/2.1.1/css/responsive.dataTables.min.css'}" rel="stylesheet" type="text/css" />
       <link href="{if ($localWebsite='true') then 'datatables/buttons.dataTables.min.css' else 'https://cdn.datatables.net/buttons/1.4.1/css/buttons.dataTables.min.css'}" rel="stylesheet" type="text/css" />
@@ -641,7 +641,7 @@
                            <xsl:text>PDF/</xsl:text>
                         </xsl:when>
                         <xsl:otherwise>
-                           <xsl:value-of select="concat('http://www.sistory.si/cdn/publikacije/',(xs:integer(round(number($sistoryPDFpubID)) div 1000) * 1000) + 1,'-',(xs:integer(round(number($sistoryPDFpubID)) div 1000) * 1000) + 1000,'/',$sistoryPDFpubID,'/')"/>
+                           <xsl:value-of select="concat('https://www.sistory.si/cdn/publikacije/',(xs:integer(round(number($sistoryPDFpubID)) div 1000) * 1000) + 1,'-',(xs:integer(round(number($sistoryPDFpubID)) div 1000) * 1000) + 1000,'/',$sistoryPDFpubID,'/')"/>
                         </xsl:otherwise>
                      </xsl:choose>
                   </xsl:variable>
@@ -713,7 +713,7 @@
       <script type="text/javascript" src="{if ($localWebsite='true') then 'datatables/vfs_fonts.js' else 'https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.32/vfs_fonts.js'}"></script>
       <script type="text/javascript" src="{if ($localWebsite='true') then 'datatables/buttons.html5.min.js' else 'https://cdn.datatables.net/buttons/1.4.2/js/buttons.html5.min.js'}"></script>
       <!-- določi, kje je naša dodatna DataTables js datoteka -->
-      <script type="text/javascript" src="{if ($localWebsite='true') then 'datatables/range-filter-external.js' else 'http://www2.sistory.si/publikacije/themes/js/plugin/DataTables/range-filter-external.js'}"></script>
+      <script type="text/javascript" src="{if ($localWebsite='true') then 'datatables/range-filter-external.js' else 'https://www2.sistory.si/publikacije/themes/js/plugin/DataTables/range-filter-external.js'}"></script>
       
       <link href="{if ($localWebsite='true') then 'datatables/responsive.dataTables.min.css' else 'https://cdn.datatables.net/responsive/2.1.1/css/responsive.dataTables.min.css'}" rel="stylesheet" type="text/css" />
       <link href="{if ($localWebsite='true') then 'datatables/buttons.dataTables.min.css' else 'https://cdn.datatables.net/buttons/1.4.1/css/buttons.dataTables.min.css'}" rel="stylesheet" type="text/css" />
@@ -800,7 +800,7 @@
                            <xsl:text>PDF/</xsl:text>
                         </xsl:when>
                         <xsl:otherwise>
-                           <xsl:value-of select="concat('http://www.sistory.si/cdn/publikacije/',(xs:integer(round(number($sistoryPDFpubID)) div 1000) * 1000) + 1,'-',(xs:integer(round(number($sistoryPDFpubID)) div 1000) * 1000) + 1000,'/',$sistoryPDFpubID,'/')"/>
+                           <xsl:value-of select="concat('https://www.sistory.si/cdn/publikacije/',(xs:integer(round(number($sistoryPDFpubID)) div 1000) * 1000) + 1,'-',(xs:integer(round(number($sistoryPDFpubID)) div 1000) * 1000) + 1000,'/',$sistoryPDFpubID,'/')"/>
                         </xsl:otherwise>
                      </xsl:choose>
                   </xsl:variable>
@@ -872,7 +872,7 @@
       <script type="text/javascript" src="{if ($localWebsite='true') then 'datatables/vfs_fonts.js' else 'https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.32/vfs_fonts.js'}"></script>
       <script type="text/javascript" src="{if ($localWebsite='true') then 'datatables/buttons.html5.min.js' else 'https://cdn.datatables.net/buttons/1.4.2/js/buttons.html5.min.js'}"></script>
       <!-- določi, kje je naša dodatna DataTables js datoteka -->
-      <script type="text/javascript" src="{if ($localWebsite='true') then 'datatables/range-filter-external.js' else 'http://www2.sistory.si/publikacije/themes/js/plugin/DataTables/range-filter-external.js'}"></script>
+      <script type="text/javascript" src="{if ($localWebsite='true') then 'datatables/range-filter-external.js' else 'https://www2.sistory.si/publikacije/themes/js/plugin/DataTables/range-filter-external.js'}"></script>
       
       <link href="{if ($localWebsite='true') then 'datatables/responsive.dataTables.min.css' else 'https://cdn.datatables.net/responsive/2.1.1/css/responsive.dataTables.min.css'}" rel="stylesheet" type="text/css" />
       <link href="{if ($localWebsite='true') then 'datatables/buttons.dataTables.min.css' else 'https://cdn.datatables.net/buttons/1.4.1/css/buttons.dataTables.min.css'}" rel="stylesheet" type="text/css" />
@@ -961,7 +961,7 @@
                            <xsl:text>PDF/</xsl:text>
                         </xsl:when>
                         <xsl:otherwise>
-                           <xsl:value-of select="concat('http://www.sistory.si/cdn/publikacije/',(xs:integer(round(number($sistoryPDFpubID)) div 1000) * 1000) + 1,'-',(xs:integer(round(number($sistoryPDFpubID)) div 1000) * 1000) + 1000,'/',$sistoryPDFpubID,'/')"/>
+                           <xsl:value-of select="concat('https://www.sistory.si/cdn/publikacije/',(xs:integer(round(number($sistoryPDFpubID)) div 1000) * 1000) + 1,'-',(xs:integer(round(number($sistoryPDFpubID)) div 1000) * 1000) + 1000,'/',$sistoryPDFpubID,'/')"/>
                         </xsl:otherwise>
                      </xsl:choose>
                   </xsl:variable>
@@ -1034,7 +1034,7 @@
    <xsl:template name="search">
       <xsl:variable name="tei-id" select="ancestor::tei:TEI/@xml:id"/>
       <xsl:variable name="sistoryAbsolutePath">
-         <xsl:if test="$chapterAsSIstoryPublications='true'">http://www.sistory.si</xsl:if>
+         <xsl:if test="$chapterAsSIstoryPublications='true'">https://www.sistory.si</xsl:if>
       </xsl:variable>
       <div id="tipue_search_content">
          <xsl:text></xsl:text>
