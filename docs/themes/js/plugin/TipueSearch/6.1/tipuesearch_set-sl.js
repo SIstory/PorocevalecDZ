@@ -3,14 +3,14 @@
 Tipue Search 6.1
 Copyright (c) 2017 Tipue
 Tipue Search is released under the MIT License
-http://www.tipue.com/search
+https://www.tipue.com/search
 */
 
 /* Dodal spodaj slovenske prevode. TODO: uredi za slovenščino stop words ipd. */
 
 /*
 Stop words
-Stop words list from http://www.ranks.nl/stopwords
+Stop words list from https://www.ranks.nl/stopwords
 */
 
 var tipuesearch_stop_words = [];
@@ -28,9 +28,9 @@ var tipuesearch_replace = {'words': [
 // Weighting
 
 var tipuesearch_weight = {'weight': [
-     {'url': 'http://www.tipue.com', 'score': 20},
-     {'url': 'http://www.tipue.com/search', 'score': 30},
-     {'url': 'http://www.tipue.com/is', 'score': 10}
+     {'url': 'https://www.tipue.com', 'score': 20},
+     {'url': 'https://www.tipue.com/search', 'score': 30},
+     {'url': 'https://www.tipue.com/is', 'score': 10}
 ]};
 
 
