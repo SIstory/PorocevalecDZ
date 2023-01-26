@@ -28,8 +28,8 @@
                             <publisher>Inštitut za novejšo zgodovino</publisher>
                             <date when="2017-10">oktober 2017</date>
                             <availability>
-                                <licence>http://creativecommons.org/licenses/by/4.0/</licence>
-                                <p>To delo je ponujeno pod <ref target="http://creativecommons.org/licenses/by/4.0/"
+                                <licence>https://creativecommons.org/licenses/by/4.0/</licence>
+                                <p>To delo je ponujeno pod <ref target="https://creativecommons.org/licenses/by/4.0/"
                                     >Creative Commons Priznanje avtorstva 4.0 Mednarodna licenco</ref>
                                 </p>
                             </availability>
