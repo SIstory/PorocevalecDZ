@@ -51,19 +51,21 @@
       </desc>
    </doc>
    
-   <xsl:param name="localWebsite">true</xsl:param>
+   <xsl:param name="localWebsite">false</xsl:param>
    
    <xsl:param name="chapterAsSIstoryPublications">false</xsl:param>
    
    <!--<xsl:param name="path-general">../../../</xsl:param>-->
-   <!--<xsl:param name="path-general">https://www2.sistory.si/publikacije/</xsl:param>-->
+   <xsl:param name="path-general">https://www2.sistory.si/publikacije/</xsl:param>
    <!-- v primeru localWebsite='true' spodnji paragraf nima vrednosti -->
-   <xsl:param name="path-general"></xsl:param>
    
    <!-- Uredi parametre v skladu z dodatnimi zahtevami za pretvorbo te publikacije: -->
    
    <!-- Iz datoteke ../../../../publikacije-XSLT/sistory/html5-foundation6-chs/to.xsl -->
-   <xsl:param name="outputDir">/Users/administrator/Documents/moje/publikacije/Porocevalec/</xsl:param>
+   <xsl:param name="outputDir">docs/</xsl:param>
+   
+   <xsl:param name="homeLabel">SIstory</xsl:param>
+   <xsl:param name="homeURL">https://sistory.si/</xsl:param>
    
    <!-- Iz datoteke ../../../../publikacije-XSLT/sistory/html5-foundation6-chs/my-html_param.xsl -->
    <xsl:param name="title-bar-sticky">false</xsl:param>
